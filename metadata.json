@@ -1,0 +1,6 @@
+{
+  "name": "ESP32 Robotic Arm 3D Controller",
+  "description": "Mobile-first real-time 3D controller and kinematics simulator for 3-servo robotic arms with WebSerial, Bluetooth stub, and telemetry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Claymorphic Raised Card */
+  .clay-card {
+    background-color: #f4f1ea;
+    border-radius: 1.5rem;
+    box-shadow: 
+      6px 6px 14px rgba(175, 168, 156, 0.45),
+      -6px -6px 14px rgba(255, 255, 255, 0.9),
+      inset 2px 2px 3px rgba(255, 255, 255, 0.7),
+      inset -2px -2px 3px rgba(175, 168, 156, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  /* Claymorphic Sunken / Inset Track */
+  .clay-inset {
+    background-color: #ebe7de;
+    box-shadow: 
+      inset 3px 3px 6px rgba(168, 160, 146, 0.45),
+      inset -3px -3px 6px rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(175, 168, 156, 0.15);
+  }
+
+  /* Claymorphic Tactile Button */
+  .clay-btn {
+    background-color: #f4f1ea;
+    color: #333842;
+    border-radius: 9999px;
+    box-shadow: 
+      4px 4px 9px rgba(175, 168, 156, 0.45),
+      -4px -4px 9px rgba(255, 255, 255, 0.9),
+      inset 1.5px 1.5px 2px rgba(255, 255, 255, 0.8),
+      inset -1.5px -1.5px 2px rgba(175, 168, 156, 0.18);
+    transition: all 0.15s ease-out;
+  }
+  .clay-btn:hover {
+    background-color: #fbf9f5;
+    box-shadow: 
+      5px 5px 11px rgba(175, 168, 156, 0.5),
+      -5px -5px 11px rgba(255, 255, 255, 0.95),
+      inset 1.5px 1.5px 2px rgba(255, 255, 255, 0.9);
+  }
+  .clay-btn:active {
+    transform: translateY(1px);
+    box-shadow: 
+      inset 2px 2px 5px rgba(168, 160, 146, 0.55),
+      inset -2px -2px 5px rgba(255, 255, 255, 0.7);
+  }
+
+  /* Claymorphic Primary Terracotta Button */
+  .clay-btn-primary {
+    background-color: #d97757;
+    color: #ffffff;
+    border-radius: 9999px;
+    box-shadow: 
+      4px 4px 10px rgba(170, 85, 55, 0.35),
+      -3px -3px 8px rgba(255, 255, 255, 0.7),
+      inset 1.5px 1.5px 2px rgba(255, 255, 255, 0.45),
+      inset -1.5px -1.5px 2px rgba(110, 45, 25, 0.35);
+  }
+  .clay-btn-primary:hover {
+    background-color: #e28363;
+  }
+  .clay-btn-primary:active {
+    transform: translateY(1px);
+    box-shadow: 
+      inset 2px 2px 5px rgba(110, 45, 25, 0.5),
+      inset -2px -2px 5px rgba(255, 255, 255, 0.3);
+  }
+
+  /* Claymorphic Terracotta Red Emergency Button */
+  .clay-btn-danger {
+    background-color: #e76f51;
+    color: #ffffff;
+    border-radius: 9999px;
+    box-shadow: 
+      4px 4px 10px rgba(180, 65, 40, 0.4),
+      -3px -3px 8px rgba(255, 255, 255, 0.7),
+      inset 1.5px 1.5px 2px rgba(255, 255, 255, 0.45),
+      inset -1.5px -1.5px 2px rgba(110, 35, 20, 0.35);
+  }
+  .clay-btn-danger:hover {
+    background-color: #ef7d61;
+  }
+
+  /* Claymorphic Green / Sage Button */
+  .clay-btn-success {
+    background-color: #4f8a6b;
+    color: #ffffff;
+    border-radius: 9999px;
+    box-shadow: 
+      4px 4px 10px rgba(50, 100, 75, 0.35),
+      -3px -3px 8px rgba(255, 255, 255, 0.7),
+      inset 1.5px 1.5px 2px rgba(255, 255, 255, 0.4),
+      inset -1.5px -1.5px 2px rgba(30, 65, 50, 0.35);
+  }
+
+  /* Clay Pill Active Selection */
+  .clay-pill-active {
+    background-color: #3b4252;
+    color: #ffffff;
+    box-shadow: 
+      inset 2px 2px 4px rgba(20, 24, 32, 0.6),
+      inset -2px -2px 4px rgba(255, 255, 255, 0.2);
+  }
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: none;
+  background-color: #dfdcd5;
+  color: #2e3440;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}

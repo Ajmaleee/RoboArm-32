@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329"/>
+      <stop offset="100%" stop-color="#040711"/>
+    </linearGradient>
+    <linearGradient id="armGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="180" fill="url(#glow)"/>
+  
+  <!-- Base turntable -->
+  <ellipse cx="256" cy="400" rx="140" ry="36" fill="#1e293b" stroke="#334155" stroke-width="8"/>
+  <ellipse cx="256" cy="380" rx="90" ry="24" fill="#334155" stroke="#475569" stroke-width="6"/>
+
+  <!-- Shoulder pivot -->
+  <circle cx="256" cy="330" r="32" fill="#0f172a" stroke="#06b6d4" stroke-width="8"/>
+  <circle cx="256" cy="330" r="14" fill="#38bdf8"/>
+
+  <!-- Upper Arm -->
+  <line x1="256" y1="330" x2="340" y2="200" stroke="#94a3b8" stroke-width="26" stroke-linecap="round"/>
+  <line x1="256" y1="330" x2="340" y2="200" stroke="#0284c7" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- Elbow pivot -->
+  <circle cx="340" cy="200" r="26" fill="#0f172a" stroke="#06b6d4" stroke-width="8"/>
+  <circle cx="340" cy="200" r="10" fill="#38bdf8"/>
+
+  <!-- Forearm -->
+  <line x1="340" y1="200" x2="210" y2="120" stroke="#94a3b8" stroke-width="20" stroke-linecap="round"/>
+  <line x1="340" y1="200" x2="210" y2="120" stroke="#38bdf8" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Tool End -->
+  <circle cx="210" cy="120" r="16" fill="#f43f5e" stroke="#ffe4e6" stroke-width="4"/>
+  <line x1="210" y1="120" x2="170" y2="90" stroke="#f43f5e" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="170" cy="90" r="7" fill="#fb7185"/>
+</svg>
